@@ -1,0 +1,24 @@
+{
+    "pchartsjhipsterApp": {
+        "pcharts" : {
+            "home": {
+                "title": "Pchartss",
+                "createLabel": "Créer un nouveau Pcharts",
+                "createOrEditLabel": "Créer ou éditer un Pcharts",
+                "search": "Search for Pcharts"
+            },
+            "created": "Un nouveau Pcharts a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Pcharts avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Pcharts avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Pcharts {{ id }} ?"
+            },
+            "detail": {
+                "title": "Pcharts"
+            },
+            "name": "Name",
+            "location": "Location"
+        }
+    }
+}
+

@@ -1,0 +1,62 @@
+
+
+<div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+
+                <div ng-controller="MyListCtrl">
+
+
+                    <div>
+                        <button class="btn btn-primary" ng-click="loadAll()">
+                            <span>Show me PCMs!</span>
+                        </button>
+                        <select ng-model="currentPcm" ng-options="pcm for pcm in pcms" ng-change="depictProductChart()">
+                        </select>
+                    </div>
+
+
+                    <h3 ng-if="currentPcm">{{currentPcm}}</h3>
+
+                    <div ng-if="pcmChartError" class="error">
+                        Error: {{pcmChartError}}
+                    </div>
+
+                    <div>
+                        <p>X: {{xFt}}</p>
+                        <select ng-model="xFt" ng-options="ft for ft in candidateFts" ng-change="updateProductChart()">
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Y: {{yFt}}</p>
+                        <select ng-model="yFt" ng-options="ft for ft in candidateFts" ng-change="updateProductChart()">
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Z: {{zFt}}</p>
+                        <select ng-model="zFt" ng-options="ft for ft in candidateFts" ng-change="updateProductChart()">
+                        </select>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+</div>
+
+
+<div class="footer">
+    <div id="tester" style="width:90%;height:800px;"></div>
+</div>
+
+

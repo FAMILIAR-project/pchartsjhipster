@@ -1,0 +1,22 @@
+{
+    "pchartsjhipsterApp": {
+        "pchart" : {
+            "home": {
+                "title": "Pcharts",
+                "createLabel": "Create a new Pchart",
+                "createOrEditLabel": "Create or edit a Pchart",
+                "search": "Search for Pchart"
+            },
+            "created": "A new Pchart is created with identifier {{ param }}",
+            "updated": "A Pchart is updated with identifier {{ param }}",
+            "deleted": "A Pchart is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Pchart {{ id }}?"
+            },
+            "detail": {
+                "title": "Pchart"
+            },
+            "name": "Name"
+        }
+    }
+}

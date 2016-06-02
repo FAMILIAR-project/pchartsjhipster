@@ -1,0 +1,66 @@
+
+
+<div>
+    <h2 translate="pchartsjhipsterApp.pcharts.home.title">Pchartss</h2>
+    <jh-alert></jh-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="pcharts.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span
+                        translate="pchartsjhipsterApp.pcharts.home.createLabel">Create new Pcharts
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="pchartsjhipsterApp.pcharts.name">Name</span></th>
+                    <th><span translate="pchartsjhipsterApp.pcharts.location">Location</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="pcharts in pchartss track by pcharts.id">
+                    <td><a ui-sref="pcharts.detail({id:pcharts.id})">{{pcharts.id}}</a></td>
+                    <td>{{pcharts.name}}</td>
+                    <td>{{pcharts.location}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="pcharts.detail({id:pcharts.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="pcharts.edit({id:pcharts.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="pcharts.delete({id:pcharts.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div id="tester" style="width:90%;height:800px;"></div>
+</div>
+
