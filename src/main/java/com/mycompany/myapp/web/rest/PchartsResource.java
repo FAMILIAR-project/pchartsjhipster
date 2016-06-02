@@ -117,7 +117,7 @@ public class PchartsResource {
     @Timed
     public String getProductChart(@PathVariable String id) {
         log.debug("REST request to produce product chart : {}", id);
-// Comparison_of_Nikon_DSLR_cameras_0.pcm
+// TODO move into a service
         try {
             PCM pcm = PCMUtils.loadPCM("/Users/macher1/Downloads/model/" + id + ".pcm");
             PCMHelper pcmmHelper = new PCMHelper();
